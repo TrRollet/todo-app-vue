@@ -78,11 +78,13 @@ const emit = defineEmits(['edit', 'delete'])
 }
 
 .btn-icon {
-  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-icon svg {
-  vertical-align: middle;
+  display: block;
 }
 
 @media (max-width: 768px) {

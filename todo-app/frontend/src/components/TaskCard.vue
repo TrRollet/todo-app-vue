@@ -641,7 +641,9 @@ function getOverdueText() {
 }
 
 .btn-icon {
-  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 640px) {

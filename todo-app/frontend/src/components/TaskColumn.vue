@@ -328,7 +328,10 @@ function onDrop(event) {
 }
 
 .column-icon {
-  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
 }
 
 .column-title h3 {
