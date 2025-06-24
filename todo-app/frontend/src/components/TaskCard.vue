@@ -30,9 +30,6 @@
         </span>
         {{ formattedDate }}
         <span v-if="isOverdue" class="overdue-label">{{ getOverdueText() }}</span>
-        <span v-if="isCompleted" class="completed-label">
-          <Check :size="10" class="inline-icon" /> Terminé
-        </span>
       </div>
     </div>
     
@@ -378,11 +375,6 @@ function getOverdueText() {
   color: #9ca3af;
 }
 
-.inline-icon {
-  display: inline;
-  margin-right: 4px;
-}
-
 /* Ajustements pour les icônes Lucide */
 .category-icon svg,
 .date-icon svg,
@@ -515,18 +507,6 @@ function getOverdueText() {
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 0.5px;
-}
-
-.completed-label {
-  font-size: 10px;
-  background: rgba(255, 255, 255, 0.9);
-  color: #10b981;
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-weight: 600;
-  text-transform: none;
-  letter-spacing: normal;
-  margin-left: 4px;
 }
 
 .completed-overlay {
